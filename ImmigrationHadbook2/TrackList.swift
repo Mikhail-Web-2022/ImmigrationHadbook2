@@ -40,7 +40,6 @@ class TrackList: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath)
 
         cell.imageView?.image = UIImage(named: imageNameArray[indexPath.row])
-        cell.imageView?.image = UIImage(data: imageNameArray[indexPath.row], scale: 1.5)
         cell.textLabel?.text = imageNameArray[indexPath.row]
         
         return cell
